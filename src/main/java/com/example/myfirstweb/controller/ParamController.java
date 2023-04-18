@@ -1,9 +1,8 @@
 package com.example.myfirstweb.controller;
 
+import com.example.myfirstweb.dao.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -42,4 +41,11 @@ public class ParamController {
         }
         return "/index.jsp";
     }
+
+    @PostMapping("/showUser")
+    public String showUser(@RequestBody User user) {
+        System.out.println(user);
+        return "/index.jsp";
+    }
+
 }
