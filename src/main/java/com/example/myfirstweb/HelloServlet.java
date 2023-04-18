@@ -18,10 +18,10 @@ public class HelloServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        ServletContext sce = request.getServletContext();
-        ApplicationContext applicationContext = (ApplicationContext) sce.getAttribute("application");
-        UserService userService = applicationContext.getBean(UserService.class);
-        userService.transferMoney("tom", "lucy", 500);
+//        ServletContext sce = request.getServletContext();
+//        ApplicationContext applicationContext = (ApplicationContext) sce.getAttribute("application");
+//        UserService userService = applicationContext.getBean(UserService.class);
+//        userService.transferMoney("tom", "lucy", 500);
 
     }
 
