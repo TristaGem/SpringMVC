@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Setter
+//@Setter
 public class User {
 
     String username;
@@ -23,5 +23,9 @@ public class User {
     }
     public User() {
 
+    }
+
+    public String toString() {
+        return this.username + this.birthday + this.age.toString();
     }
 }

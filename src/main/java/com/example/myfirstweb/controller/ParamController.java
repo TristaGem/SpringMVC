@@ -44,7 +44,7 @@ public class ParamController {
 
     @PostMapping("/showUser")
     public String showUser(@RequestBody User user) {
-        System.out.println(user);
+        System.out.println(user.toString());
         return "/index.jsp";
     }
 
